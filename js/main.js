@@ -20,5 +20,22 @@ window.onload = function() {
 		zIndex: 999999
 	}).disableSelection();
 	
+  let player = new cplayer({
+	element: document.getElementById('music_player'),
+	playlist: [
+	  {
+		src: './music/Beautiful_lyrics.mp3',
+		poster: './img/sungho.jpg',
+		name: 'Beautiful lyrics',
+		artist: 'Crush',
+		//lyric: '[00:00.00]테스트\n[00:01.00]테스트1\n',
+		//sublyric: '[00:00.00]테스트\n[00:01.00]테스트1\n',
+		album: '6'
+	  }
+	],
+	big: true,
+	autoplay: true
+  })
+	
 	//$(".todo-list").sortable();
 }
